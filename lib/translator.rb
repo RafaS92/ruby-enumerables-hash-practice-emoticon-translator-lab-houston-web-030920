@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+<<<<<<< HEAD
 
 def load_library(path)
  emoticons = YAML.load_file(path)
@@ -13,6 +14,10 @@ def load_library(path)
     emoticon_hash["get_meaning"][emoticon_set.last] = english_word
   end
   emoticon_hash
+=======
+def load_library
+  YAML.load_file(emoticons.yml)
+>>>>>>> 75fc532fc3bb156ff1733ac4b13d050c69f4b484
 end
 
 
